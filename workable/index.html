@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sales Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <i class="fas fa-star"></i>
+
+                <h2>MicPhils</h2>
+
+            </div>
+
+            
+
+            <div class="menu-section">
+
+                <h3>MENU</h3>
+
+                <ul class="nav-links">
+
+                    <li class="active">
+
+                        <a href="#"><i class="fas fa-th-large"></i>Overview</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-chart-bar"></i>Statistics</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-users"></i>Customers</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-box"></i>Product</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-envelope"></i>Messages
+
+                            <span class="badge">13</span>
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-exchange-alt"></i>Transactions</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="menu-section">
+
+                <h3>GENERAL</h3>
+
+                <ul class="nav-links">
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#"><i class="fas fa-shield-alt"></i>Security</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="user-profile">
+
+                <div class="avatar">MP</div>
+
+                <div class="user-info">
+
+                    <h4>MicPhils</h4>
+
+                    <p>Codecatalystgmail.com</p>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- Main Content -->
+
+        <main class="main-content">
+
+            <header class="top-bar">
+
+                <div class="page-title">
+
+                    <h1>Sales Admin</h1>
+
+                </div>
+
+                <div class="search-bar">
+
+                    <i class="fas fa-search"></i>
+
+                    <input type="text" placeholder="Search anything in Siohoma...">
+
+                </div>
+
+                <div class="actions">
+
+                    <button class="icon-btn"><i class="fas fa-envelope"></i></button>
+
+                    <button class="icon-btn"><i class="fas fa-bell"></i></button>
+
+                    <button class="add-product-btn">
+
+                        Add new product
+
+                        <i class="fas fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <div class="dashboard-content">
+
+                <div class="dashboard-header">
+
+                    <div class="title-section">
+
+                        <h2>Dashboard</h2>
+
+                        <p>An any way to manage sales with care and precision.</p>
+
+                    </div>
+
+                    <div class="date-picker">
+
+                        <i class="far fa-calendar"></i>
+
+                        <span>January 2024 - May 2024</span>
+
+                        <i class="fas fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Stats Cards -->
+
+                <div class="stats-cards">
+
+                    <div class="update-card">
+
+                        <div class="update-badge">Update</div>
+
+                        <p class="date">Feb 12th 2024</p>
+
+                        <h3>Sales revenue increased</h3>
+
+                        <p class="percentage">40% in 1 week</p>
+
+                        <a href="#" class="see-stats">
+
+                            See Statistics
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                    
+
+                    <div class="stat-card">
+
+                        <div class="stat-header">
+
+                            <h3>Net Income</h3>
+
+                            <i class="fas fa-ellipsis-h"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h2>$193,000</h2>
+
+                            <p class="trend positive">
+
+                                <i class="fas fa-arrow-up"></i>
+
+                                +35% from last month
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-header">
+
+                            <h3>Total Return</h3>
+
+                            <i class="fas fa-ellipsis-h"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h2>$32,000</h2>
+
+                            <p class="trend negative">
+
+                                <i class="fas fa-arrow-down"></i>
+
+                                -24% from last month
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Charts Section -->
+
+                <div class="charts-section">
+
+                    <div class="transactions-list">
+
+                        <div class="section-header">
+
+                            <h3>Transaction</h3>
+
+                            <i class="fas fa-ellipsis-h"></i>
+
+                        </div>
+
+                        <div class="transaction-items">
+
+                            <!-- Static Transaction Items -->
+
+                            <div class="transaction-item">
+
+                                <div class="transaction-icon">👕</div>
+
+                                <div class="transaction-info">
+
+                                    <h4>Premium T-Shirt</h4>
+
+                                    <p>Jul 12th 2024</p>
+
+                                </div>
+
+                                <div class="transaction-status completed">Completed</div>
+
+                                <div class="transaction-id">QJWEJS7ISNC</div>
+
+                            </div>
+
+                            <div class="transaction-item">
+
+                                <div class="transaction-icon">🎮</div>
+
+                                <div class="transaction-info">
+
+                                    <h4>Playstation 5</h4>
+
+                                    <p>Jul 12th 2024</p>
+
+                                </div>
+
+                                <div class="transaction-status pending">Pending</div>
+
+                                <div class="transaction-id">QJWEJS7ISNC</div>
+
+                            </div>
+
+                            <div class="transaction-item">
+
+                                <div class="transaction-icon">📱</div>
+
+                                <div class="transaction-info">
+
+                                    <h4>iPhone 15 Pro Max</h4>
+
+                                    <p>Jul 12th 2024</p>
+
+                                </div>
+
+                                <div class="transaction-status completed">Completed</div>
+
+                                <div class="transaction-id">QJWEJS7ISNC</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="revenue-chart">
+
+                        <div class="section-header">
+
+                            <h3>Revenue</h3>
+
+                            <i class="fas fa-ellipsis-h"></i>
+
+                        </div>
+
+                        <div class="static-chart">
+
+                            <div class="chart-bars">
+
+                                <div class="chart-bar">
+
+                                    <div class="bar income" style="height: 65%"></div>
+
+                                    <div class="bar expenses" style="height: 45%"></div>
+
+                                    <span class="label">Jan</span>
+
+                                </div>
+
+                                <div class="chart-bar">
+
+                                    <div class="bar income" style="height: 75%"></div>
+
+                                    <div class="bar expenses" style="height: 55%"></div>
+
+                                    <span class="label">Feb</span>
+
+                                </div>
+
+                                <div class="chart-bar">
+
+                                    <div class="bar income" style="height: 85%"></div>
+
+                                    <div class="bar expenses" style="height: 65%"></div>
+
+                                    <span class="label">Mar</span>
+
+                                </div>
+
+                                <div class="chart-bar">
+
+                                    <div class="bar income" style="height: 95%"></div>
+
+                                    <div class="bar expenses" style="height: 75%"></div>
+
+                                    <span class="label">Apr</span>
+
+                                </div>
+
+                                <div class="chart-bar">
+
+                                    <div class="bar income" style="height: 80%"></div>
+
+                                    <div class="bar expenses" style="height: 60%"></div>
+
+                                    <span class="label">May</span>
+
+                                </div>
+
+                                <div class="chart-bar">
+
+                                    <div class="bar income" style="height: 70%"></div>
+
+                                    <div class="bar expenses" style="height: 50%"></div>
+
+                                    <span class="label">Jun</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="chart-legend">
+
+                                <div class="legend-item">
+
+                                    <span class="legend-color income"></span>
+
+                                    <span>Income</span>
+
+                                </div>
+
+                                <div class="legend-item">
+
+                                    <span class="legend-color expenses"></span>
+
+                                    <span>Expenses</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Sales Report -->
+
+                <div class="sales-report">
+
+                    <div class="section-header">
+
+                        <h3>Sales Report</h3>
+
+                        <i class="fas fa-ellipsis-h"></i>
+
+                    </div>
+
+                    <div class="report-bars">
+
+                        <div class="report-item">
+
+                            <div class="report-label">Product Launched</div>
+
+                            <div class="report-bar" style="width: 60%">
+
+                                <span class="report-value">233</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="report-item">
+
+                            <div class="report-label">Ongoing Product</div>
+
+                            <div class="report-bar" style="width: 30%">
+
+                                <span class="report-value">23</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="report-item">
+
+                            <div class="report-label">Product Sold</div>
+
+                            <div class="report-bar" style="width: 85%">
+
+                                <span class="report-value">482</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+
+        <!-- Performance Sidebar -->
+
+        <aside class="performance-sidebar">
+
+            <div class="performance-chart">
+
+                <h3>Total View Performance</h3>
+
+                <div class="donut-chart">
+
+                    <div class="donut-segment" style="--percentage: 68; --color: var(--secondary-color);">
+
+                        <span class="donut-label">68%</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="performance-tips">
+
+                <p>Here are some tips on how to improve your score.</p>
+
+                <button class="guide-btn">Guide Views</button>
+
+            </div>
+
+            <div class="upgrade-card">
+
+                <div class="upgrade-content">
+
+                    <h3>Level up your sales managing to the next level.</h3>
+
+                    <p>An any way to manage sales with care and precision.</p>
+
+                    <button class="upgrade-btn">Update to MicPhils+</button>
+
+                </div>
+
+                <div class="upgrade-decoration"></div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</body>
+
+</html> 

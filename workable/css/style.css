@@ -1,0 +1,1885 @@
+:root {
+
+    --primary-color: #0a4d2e;
+    --primary-light: #1a634a;
+    --secondary-color: #4caf50;
+    --background-color: #f8fafc;
+    --card-background: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --border-color: #e2e8f0;
+    --success-color: #22c55e;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+
+.container {
+
+    display: grid;
+    grid-template-columns: 280px 1fr 340px;
+    min-height: 100vh;
+    gap: 24px;
+    padding: 24px;
+
+}
+
+
+
+
+/* Main Content Styles */
+
+
+
+.main-content {
+
+    background-color: var(--background-color);
+
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 8px;
+    background: var(--card-background);
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+
+.page-title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+
+.search-bar {
+    position: relative;
+    flex: 1;
+    max-width: 440px;
+    margin: 0 24px;
+}
+
+
+.search-bar input {
+
+    width: 100%;
+    padding: 12px 44px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    background-color: var(--background-color);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+
+.search-bar input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(10, 77, 46, 0.1);
+
+}
+
+
+.search-bar i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+
+.actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+}
+
+
+.icon-btn {
+    background: var(--background-color);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+
+}
+
+.icon-btn:hover {
+    background: var(--border-color);
+    color: var(--text-primary);
+}
+
+
+
+
+.add-product-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.add-product-btn:hover {
+
+
+
+    background-color: var(--primary-light);
+
+
+
+    transform: translateY(-1px);
+
+
+
+}
+
+
+
+
+
+
+
+/* Dashboard Header */
+
+
+
+.dashboard-header {
+
+
+
+    display: flex;
+
+
+
+    justify-content: space-between;
+
+
+
+    align-items: center;
+
+
+
+    margin-bottom: 24px;
+
+
+
+}
+
+
+
+
+
+
+
+.title-section h2 {
+
+
+
+    font-size: 1.75rem;
+
+
+
+    font-weight: 600;
+
+
+
+    margin-bottom: 8px;
+
+
+
+}
+
+
+
+
+
+
+
+.title-section p {
+
+
+
+    color: var(--text-secondary);
+
+
+
+}
+
+
+
+
+
+
+
+.date-picker {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 12px;
+
+
+
+    padding: 12px 20px;
+
+
+
+    background: var(--card-background);
+
+
+
+    border-radius: 12px;
+
+
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+
+
+    cursor: pointer;
+
+
+
+    transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.date-picker:hover {
+
+
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+
+
+
+
+/* Stats Cards */
+
+
+
+.stats-cards {
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+    gap: 24px;
+
+
+
+    margin-bottom: 32px;
+
+
+
+}
+
+
+
+
+
+
+
+.stat-card {
+
+
+
+    background-color: var(--card-background);
+
+
+
+    padding: 24px;
+
+
+
+    border-radius: 16px;
+
+
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+
+
+    transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.stat-card:hover {
+
+
+
+    transform: translateY(-2px);
+
+
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+
+
+
+
+.update-card {
+
+
+
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+
+
+
+    color: white;
+
+
+
+    padding: 24px;
+
+
+
+    border-radius: 16px;
+
+
+
+    position: relative;
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.update-card::after {
+
+
+
+    content: '';
+
+
+
+    position: absolute;
+
+
+
+    top: 0;
+
+
+
+    right: 0;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1));
+
+
+
+}
+
+
+
+
+
+
+
+.update-badge {
+
+
+
+    background: rgba(255,255,255,0.2);
+
+
+
+    padding: 6px 12px;
+
+
+
+    border-radius: 20px;
+
+
+
+    font-size: 0.85rem;
+
+
+
+    display: inline-block;
+
+
+
+    margin-bottom: 16px;
+
+
+
+}
+
+
+
+
+
+
+
+.see-stats {
+
+
+
+    color: white;
+
+
+
+    text-decoration: none;
+
+
+
+    display: inline-flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 8px;
+
+
+
+    margin-top: 16px;
+
+
+
+    font-weight: 500;
+
+
+
+    padding: 8px 0;
+
+
+
+    border-bottom: 2px solid transparent;
+
+
+
+    transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.see-stats:hover {
+
+
+
+    border-bottom-color: white;
+
+
+
+}
+
+
+
+
+
+
+
+/* Performance Sidebar */
+
+
+
+.performance-sidebar {
+
+
+
+    background: var(--card-background);
+
+
+
+    border-radius: 16px;
+
+
+
+    padding: 24px;
+
+
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+
+
+    gap: 24px;
+
+
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+
+
+
+
+.performance-chart {
+
+
+
+    margin-bottom: 24px;
+
+
+
+}
+
+
+
+
+
+
+
+.performance-chart h3 {
+
+
+
+    font-size: 1.2rem;
+
+
+
+    margin-bottom: 16px;
+
+
+
+}
+
+
+
+
+
+
+
+.guide-btn, .upgrade-btn {
+
+
+
+    width: 100%;
+
+
+
+    padding: 12px;
+
+
+
+    border: none;
+
+
+
+    border-radius: 12px;
+
+
+
+    cursor: pointer;
+
+
+
+    font-weight: 500;
+
+
+
+    transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.guide-btn {
+
+
+
+    background: var(--background-color);
+
+
+
+    color: var(--text-primary);
+
+
+
+}
+
+
+
+
+
+
+
+.upgrade-btn {
+
+
+
+    background: var(--primary-color);
+
+
+
+    color: white;
+
+
+
+}
+
+
+
+
+
+
+
+.guide-btn:hover, .upgrade-btn:hover {
+
+
+
+    transform: translateY(-1px);
+
+
+
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+
+
+
+
+/* Transaction Items */
+
+
+
+.transaction-item {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    padding: 16px;
+
+
+
+    border-bottom: 1px solid var(--border-color);
+
+
+
+    transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.transaction-item:hover {
+
+
+
+    background: var(--background-color);
+
+
+
+}
+
+
+
+
+
+
+
+.transaction-icon {
+
+
+
+    width: 40px;
+
+
+
+    height: 40px;
+
+
+
+    background: var(--background-color);
+
+
+
+    border-radius: 12px;
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    margin-right: 16px;
+
+
+
+    font-size: 1.2rem;
+
+
+
+}
+
+
+
+
+
+
+
+.transaction-status {
+
+
+
+    padding: 6px 12px;
+
+
+
+    border-radius: 20px;
+
+
+
+    font-size: 0.85rem;
+
+
+
+    font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+.transaction-status.completed {
+
+
+
+    background: rgba(34, 197, 94, 0.1);
+
+
+
+    color: var(--success-color);
+
+
+
+}
+
+
+
+
+
+
+
+.transaction-status.pending {
+
+
+
+    background: rgba(245, 158, 11, 0.1);
+
+
+
+    color: var(--warning-color);
+
+
+
+}
+
+
+
+
+
+
+
+/* Static Chart Styles */
+
+
+
+.static-chart {
+
+
+
+    padding: 20px;
+
+
+
+    height: 300px;
+
+
+
+    position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+.chart-bars {
+
+
+
+    display: flex;
+
+
+
+    justify-content: space-between;
+
+
+
+    align-items: flex-end;
+
+
+
+    height: 220px;
+
+
+
+    padding-bottom: 30px;
+
+
+
+    border-bottom: 2px solid var(--border-color);
+
+
+
+}
+
+
+
+
+
+
+
+.chart-bar {
+
+
+
+    width: 60px;
+
+
+
+    position: relative;
+
+
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+
+
+    align-items: center;
+
+
+
+    gap: 8px;
+
+
+
+}
+
+
+
+
+
+
+
+.bar {
+
+
+
+    width: 24px;
+
+
+
+    border-radius: 12px;
+
+
+
+    position: relative;
+
+
+
+}
+
+
+
+
+
+
+
+.bar.income {
+
+
+
+    background: var(--primary-color);
+
+
+
+    margin-right: -12px;
+
+
+
+    z-index: 2;
+
+
+
+}
+
+
+
+
+
+
+
+.bar.expenses {
+
+
+
+    background: var(--secondary-color);
+
+
+
+    opacity: 0.5;
+
+
+
+    margin-left: -12px;
+
+
+
+}
+
+
+
+
+
+
+
+.label {
+
+
+
+    position: absolute;
+
+
+
+    bottom: -25px;
+
+
+
+    color: var(--text-secondary);
+
+
+
+    font-size: 0.85rem;
+
+
+
+}
+
+
+
+
+
+
+
+.chart-legend {
+
+
+
+    display: flex;
+
+
+
+    justify-content: center;
+
+
+
+    gap: 24px;
+
+
+
+    margin-top: 24px;
+
+
+
+}
+
+
+
+
+
+
+
+.legend-item {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 8px;
+
+
+
+    color: var(--text-secondary);
+
+
+
+    font-size: 0.9rem;
+
+
+
+}
+
+
+
+
+
+
+
+.legend-color {
+
+
+
+    width: 12px;
+
+
+
+    height: 12px;
+
+
+
+    border-radius: 4px;
+
+
+
+}
+
+
+
+
+
+
+
+.legend-color.income {
+
+
+
+    background: var(--primary-color);
+
+
+
+}
+
+
+
+
+
+
+
+.legend-color.expenses {
+
+
+
+    background: var(--secondary-color);
+
+
+
+    opacity: 0.5;
+
+
+
+}
+
+
+
+
+
+
+
+/* Sales Report Bars */
+
+
+
+.report-bars {
+
+
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+
+
+    gap: 16px;
+
+
+
+}
+
+
+
+
+
+
+
+.report-item {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    gap: 16px;
+
+
+
+}
+
+
+
+
+
+
+
+.report-label {
+
+
+
+    min-width: 140px;
+
+
+
+    color: var(--text-secondary);
+
+
+
+    font-size: 0.9rem;
+
+
+
+}
+
+
+
+
+
+
+
+.report-bar {
+
+
+
+    height: 24px;
+
+
+
+    background: var(--secondary-color);
+
+
+
+    border-radius: 12px;
+
+
+
+    position: relative;
+
+
+
+    transition: width 0.6s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.report-value {
+
+
+
+    position: absolute;
+
+
+
+    right: 12px;
+
+
+
+    top: 50%;
+
+
+
+    transform: translateY(-50%);
+
+
+
+    color: white;
+
+
+
+    font-size: 0.85rem;
+
+
+
+    font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+/* Donut Chart */
+
+
+
+.donut-chart {
+
+
+
+    width: 200px;
+
+
+
+    height: 200px;
+
+
+
+    margin: 20px auto;
+
+
+
+    border-radius: 50%;
+
+
+
+    background: conic-gradient(
+
+
+
+        var(--primary-color) 0% 23%,
+
+
+
+        var(--secondary-color) 23% 91%,
+
+
+
+        var(--warning-color) 91% 100%
+
+
+
+    );
+
+
+
+    position: relative;
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+}
+
+
+
+
+
+
+
+.donut-chart::before {
+
+
+
+    content: '';
+
+
+
+    position: absolute;
+
+
+
+    width: 140px;
+
+
+
+    height: 140px;
+
+
+
+    background: white;
+
+
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+
+
+
+
+.donut-chart::after {
+
+
+
+    content: '565K';
+
+
+
+    position: absolute;
+
+
+
+    font-size: 1.5rem;
+
+
+
+    font-weight: 600;
+
+
+
+    color: var(--text-primary);
+
+
+
+}
+
+
+
+
+
+
+
+.performance-chart .chart-legend {
+
+
+
+    margin-top: 32px;
+
+
+
+}
+
+
+
+
+
+
+
+/* Upgrade Card Decoration */
+
+
+
+.upgrade-card {
+
+
+
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+
+
+
+    border-radius: 16px;
+
+
+
+    padding: 24px;
+
+
+
+    position: relative;
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.upgrade-decoration {
+
+
+
+    position: absolute;
+
+
+
+    top: -20px;
+
+
+
+    right: -20px;
+
+
+
+    width: 140px;
+
+
+
+    height: 140px;
+
+
+
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+
+
+
+    opacity: 0.1;
+
+
+
+    border-radius: 50%;
+
+
+
+    transform: rotate(-45deg);
+
+
+
+}
+
+
+
+
+
+
+
+.upgrade-content {
+
+
+
+    position: relative;
+
+
+
+    z-index: 1;
+
+
+
+}
+
+
+
+
+
+
+
+.upgrade-card h3 {
+
+
+
+    font-size: 1.2rem;
+
+
+
+    margin-bottom: 12px;
+
+
+
+    color: var(--text-primary);
+
+
+
+}
+
+
+
+
+
+
+
+.upgrade-card p {
+
+
+
+    color: var(--text-secondary);
+
+
+
+    margin-bottom: 20px;
+
+
+
+    font-size: 0.9rem;
+
+
+
+}
+
+
+
+
+
+
+
+/* Additional Enhancements */
+
+
+
+.transaction-info h4 {
+
+
+
+    font-size: 0.95rem;
+
+
+
+    color: var(--text-primary);
+
+
+
+    margin-bottom: 4px;
+
+
+
+}
+
+
+
+
+
+
+
+.transaction-info p {
+
+
+
+    font-size: 0.85rem;
+
+
+
+    color: var(--text-secondary);
+
+
+
+}
+
+
+
+
+
+
+
+.transaction-id {
+
+
+
+    margin-left: auto;
+
+
+
+    font-size: 0.85rem;
+
+
+
+    color: var(--text-secondary);
+
+
+
+    font-family: 'Roboto Mono', monospace;
+
+
+
+}
+
+
+
+
+
+
+
+/* Card Hover Effects */
+
+
+
+.stat-card, .transactions-list, .revenue-chart, .sales-report {
+
+
+
+    transition: all 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.stat-card:hover, .transactions-list:hover, .revenue-chart:hover, .sales-report:hover {
+
+
+
+    transform: translateY(-2px);
+
+
+
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+
+
+
+
+/* Responsive Grid Adjustments */
+
+
+
+@media (max-width: 1400px) {
+
+
+
+    .container {
+
+
+
+        grid-template-columns: 260px 1fr 300px;
+
+
+
+        gap: 20px;
+
+
+
+        padding: 20px;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+
+
+    .container {
+
+
+
+        grid-template-columns: 240px 1fr;
+
+
+
+    }
+
+
+
+    .performance-sidebar {
+
+
+
+        display: none;
+
+
+
+    }
+
+
+
+} 
+
+
